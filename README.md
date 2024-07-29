@@ -2,8 +2,6 @@
 This project is part of the course "Designing Interactive Systems".
 There were 4 milestones in total, and you can find the last version in the folder Project Milestone 4.
 
-To enhance the usability and maintainability of your window management system, you can create a comprehensive README file. This document will serve as a guide for users and contributors, providing essential information about setup, usage, dependencies, and future development. Below is a template for a README file that incorporates your suggested improvements:
-
 ---
 # Window System Project with Applications
 
