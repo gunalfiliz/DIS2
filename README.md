@@ -2,7 +2,6 @@
 This project is part of the course "Designing Interactive Systems".
 There were 4 milestones in total, and you can find the last version in the folder Project Milestone 4.
 
-Thank you for providing the code for the third milestone. I'll update the README to include information about this new development. Here's an improved version of the README that incorporates the new features:
 
 # Window System Project
 
