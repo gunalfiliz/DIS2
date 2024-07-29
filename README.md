@@ -2,93 +2,89 @@
 This project is part of the course "Designing Interactive Systems".
 There were 4 milestones in total, and you can find the last version in the folder Project Milestone 4.
 
+To enhance the usability and maintainability of your window management system, you can create a comprehensive README file. This document will serve as a guide for users and contributors, providing essential information about setup, usage, dependencies, and future development. Below is a template for a README file that incorporates your suggested improvements:
 
-# Window System Project
+---
+# Window System Project with Applications
 
 ## Project Overview
 
-This project has evolved from a simple multilingual greeting application to a sophisticated window system. Developed as part of a course assignment, it consists of multiple milestones, each building upon the previous one to create a more complex and feature-rich application.
+This project has evolved from a simple multilingual greeting application to a sophisticated window system with multiple built-in applications. Developed as part of a course assignment, it consists of multiple milestones, each building upon the previous one to create a more complex and feature-rich application environment.
 
-## Milestone 3: Advanced Window Management
+## Milestone 4: Integrated Applications
 
-The third milestone introduces advanced window management features, significantly enhancing the functionality and user interaction of the window system.
+The fourth milestone introduces several applications that run within the window system, demonstrating the versatility and functionality of the platform.
 
 ### New Features:
 
-1. **Window Manager**
-   - Manages window decorations (title bar, minimize, maximize, and close buttons)
-   - Handles window dragging and positioning
-   - Implements a taskbar for easy window management
+1. **User Interface Toolkit (UITK)**
+   - Implements a set of reusable UI components
+   - Includes Widget, Container, Label, Button, and Slider classes
 
-2. **Enhanced Window Functionality**
-   - Window minimizing and hiding
-   - Window closing
-   - Bringing windows to the front
-   - Proper z-order management
+2. **HelloWorld Application**
+   - A multilingual greeting application
+   - Allows users to select a language and displays a greeting
 
-3. **Desktop Environment**
-   - Implementation of a desktop background
-   - Taskbar displaying all open windows
+3. **Colors Application**
+   - An RGB color mixer
+   - Uses sliders to adjust red, green, and blue values
+   - Displays the resulting color and its hex code
 
-4. **Improved Event Handling**
-   - More sophisticated mouse event handling (pressed, released, dragged)
-   - Window-specific event handling
+4. **Calculator Application**
+   - A fully functional calculator
+   - Supports basic arithmetic operations
+   - Includes a clear function and sign change option
 
 ### Key Components:
 
-1. **WindowSystem Class**
-   - Main class managing the overall system
-   - Handles painting and input events
-   - Manages window hierarchy and z-order
+1. **UITK (User Interface Toolkit)**
+   - `Widget`: Base class for UI elements
+   - `Container`: Manages layout of child widgets
+   - `Label`: Displays text
+   - `Button`: Clickable element with customizable actions
+   - `Slider`: Allows value selection within a range
 
-2. **WindowManager Class**
-   - Manages window decorations and taskbar
-   - Handles window positioning and dragging logic
-   - Implements desktop drawing
+2. **HelloWorld Class**
+   - Implements a language selection interface
+   - Displays greetings in multiple languages
 
-3. **Window Class**
-   - Represents individual windows
-   - Enhanced with visibility toggle (isHidden property)
-   - Improved drawing method
+3. **Colors Class**
+   - Implements an RGB color mixer
+   - Uses sliders for adjusting color values
+   - Displays real-time color preview and hex code
 
-4. **Screen Class**
-   - Represents the main screen
-   - Implements desktop and taskbar drawing
+4. **Calculator Class**
+   - Implements a full calculator interface
+   - Supports basic arithmetic operations
+   - Includes error handling for invalid expressions
 
 ### Functionality:
-- Window Decoration: Title bars with minimize, maximize, and close buttons
-- Window Dragging: Users can drag windows by their title bars
-- Window State Management: Windows can be minimized, closed, or brought to the front
-- Taskbar: Shows all open windows and allows quick access
-- Desktop: Implements a desktop background
+- Window Management: Create and manage multiple application windows
+- User Interface: Consistent UI elements across applications
+- Inter-application Communication: Applications can interact with the window system
 
 ### How it works:
-1. The WindowSystem initializes with a screen, WindowManager, and sample windows.
-2. Windows are drawn with decorations (title bar, buttons) managed by the WindowManager.
-3. User interactions (clicking, dragging) are handled to manage window states and positions.
-4. The taskbar shows all open windows and allows for easy window management.
-5. Windows respect z-order, with the ability to bring windows to the front.
+1. The WindowSystem initializes with the capability to launch multiple applications.
+2. Users can open different applications (HelloWorld, Colors, Calculator) in separate windows.
+3. Each application utilizes the UITK components for its user interface.
+4. Applications handle their own logic and update their UI accordingly.
 
 ## How to Run
 
-To run the Window System:
+To run the Window System with applications:
 1. Ensure you have Python 3.x installed on your system.
-2. Make sure you have the required dependencies (GraphicsEventSystem).
-3. Save the provided code in separate files (`WindowSystem.py`, `Window.py`, and `WindowManager.py`).
-4. Run the script using Python: `python WindowSystem.py`
+2. Make sure you have the required dependencies (GraphicsEventSystem and any other custom modules).
+3. Save all provided code files in the same directory.
+4. Run the main script (likely `WindowSystem.py`) using Python: `python WindowSystem.py`
 
 ## Dependencies
 - Python 3.x
-- GraphicsEventSystem (custom module, ensure it's in the same directory or in the Python path)
+- GraphicsEventSystem (custom module)
+- Any additional custom modules (e.g., UITK.py)
 
 ## Authors
 - Filiz Günal (#431174)
 - Samuel Kwong (#430273)
 
-## Next Steps
-Future developments could include:
-- Window resizing functionality
-- More advanced desktop features (icons, right-click menus)
-- Custom window content and applications
+This project now represents a functional window system with multiple integrated applications, demonstrating advanced concepts in GUI programming, event handling, and application design within a custom windowing environment.
 
-This project now represents a basic but functional window management system, demonstrating key concepts in GUI programming and event handling.
